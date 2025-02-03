@@ -6,7 +6,7 @@ RUN npm install --production --unsafe-perm --loglevel=error
 RUN npm dedupe
 RUN rm -rf frontend/node_modules
 
-FROM node:20.16
+FROM node:20.18.2
 ARG BUILD_DATE
 ARG VCS_REF
 LABEL maintainer="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
